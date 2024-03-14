@@ -2,7 +2,7 @@ import database
 import schedule
 import scraper
 import time
-
+import ingest_stocks
 
 def dummy(x):
     print("HI", x)
@@ -25,4 +25,6 @@ def main():
 
 
 if __name__ == "__main__":
+    if len(database.Database().get_all_companies_wkn()) == 0:
+        ingest_stocks.enter_stocks()
     main()
