@@ -13,7 +13,10 @@ class Scrapings:
     @staticmethod
     def scrape_tagesschau(content: str) -> float:
         soup = bs4.BeautifulSoup(content, "html.parser")
-        return float(str(soup.select("tr.linked td.ri span.icon_neg")[0].contents[0]).replace(",", "."))
+        try:
+            return float(str(soup.select("tr.linked td.ri span.icon_pos")[0].contents[0]).replace(",", "."))
+        except IndexError:
+            return float(str(soup.select("tr.linked td.ri span.icon_neg")[0].contents[0]).replace(",", "."))
 
 
 def scrape(wkn: str) -> [float, Website]:

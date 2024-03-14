@@ -3,3 +3,4 @@ venv/
 #  specific
 config.ini
 stocks.txt
+.idea/
