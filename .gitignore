@@ -1,0 +1,5 @@
+venv/
+**/*.pyc
+#  specific
+config.ini
+stocks.txt
