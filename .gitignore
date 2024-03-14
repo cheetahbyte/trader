@@ -1,6 +1,6 @@
 venv/
 **/*.pyc
 #  specific
-config.ini
-stocks.txt
 .idea/
+*_*.txt
+*.ini

@@ -1,0 +1,31 @@
+WKN;Name;Country
+865985; Apple Inc.; USA
+870747; Microsoft Corp.; USA
+906866; Amazon.com Inc.; USA
+A14Y6F; Alphabet A Inc.; USA
+A14Y6H; Alphabet C Inc.; USA
+A1JWVX; Meta Platforms Inc.; USA
+A1CX3T; Tesla Inc.; USA
+853260; Johnson & Johnson; USA
+850628; JPMorgan Chase & Co.; USA
+A0NC7B; Visa Inc.; USA
+723610; Siemens AG; Deutschland
+716460; SAP SE; Deutschland
+766403; Volkswagen AG; Deutschland
+BAY001; Bayer AG; Deutschland
+555750; Deutsche Telekom AG; Deutschland
+BASF11; BASF SE; Deutschland
+840400; Allianz SE; Deutschland
+514000; Deutsche Bahn AG; Deutschland
+710000; Daimler AG; Deutschland
+519000; BMW AG; Deutschland
+A0B9FU; Proximus Group; Belgien
+863186; Advanced Micro Devices Inc.; USA
+A2QNWV; Fractal Gaming Group AB; Schweden
+555200; Deutsche Post AG; Deutschland
+A1EWWW; Adidas AG; Deutschland
+543900; Continental AG; Deutschland
+823212; Deutsche Lufthansa AG; Deutschland
+918422; Nvidia Corporation; USA
+552484; Netflix Inc.; USA
+856958; McDonald's Corporation; USA

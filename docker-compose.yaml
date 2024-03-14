@@ -1,0 +1,38 @@
+version: "3.5"
+
+services:
+  scraper:
+    image: trader/scraper
+    build:
+      context: scraper
+      dockerfile: Dockerfile
+    restart: always
+    container_name: trader_scraper
+    networks:
+      - tradernet
+  database:
+    image: postgres:alpine
+    container_name: trader_database
+    shm_size: 128mb
+    environment:
+      - POSTGRES_PASSWORD=trader
+      - POSTGRES_DB=trader
+    secrets:
+      - db_password
+    networks:
+      - tradernet
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./config/database/:/docker-entrypoint-initdb.d
+    
+networks:
+  tradernet:
+    external: false
+
+
+secrets:
+  db_password:
+    file: config/docker/db_password.txt
+
+volumes:
+  pgdata:
