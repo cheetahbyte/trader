@@ -1,4 +1,4 @@
-create table aktien (
+create table aktien(
     wkn char(6),
     value real,
     time timestamp default CURRENT_TIMESTAMP,
@@ -30,3 +30,12 @@ comment on column companies.country is 'the companies origin country';
 
 alter table
     companies owner to postgres;
+
+create table users(
+    id UUID not null constraint user_id primary key,
+    username varchar(32) not null,
+    full_name varchar(128),
+    email varchar(128) not null,
+    hashed_password char(256),
+    "disabled" boolean not null default false
+);
