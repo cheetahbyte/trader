@@ -1,3 +1,5 @@
+import datetime
+
 import pydantic
 import uuid
 
@@ -40,3 +42,9 @@ class CompanyCreateModel(pydantic.BaseModel):
     wkn: str
     company: str
     country: str | None = None
+
+
+class Stock(pydantic.BaseModel):
+    wkn: str
+    value: float
+    time: datetime.datetime
