@@ -33,3 +33,10 @@ class Company(pydantic.BaseModel):
     wkn: str
     company: str
     country: str
+    user: uuid.UUID
+
+
+class CompanyCreateModel(pydantic.BaseModel):
+    wkn: str
+    company: str
+    country: str | None = None
